@@ -109,6 +109,8 @@ mvn test
 3. **Utilitários para Testes**
    - `NetworkTestUtils`: Fornece métodos auxiliares para testes de rede
 
+Para informações detalhadas sobre a implementação dos testes, consulte a [Documentação de Testes](docs/TestImplementation.md)
+
 ## Próximos Passos
 
 - [x] Implementação de testes unitários abrangentes
