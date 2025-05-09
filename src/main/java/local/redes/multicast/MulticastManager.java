@@ -299,10 +299,11 @@ public class MulticastManager {
     
     /**
      * Retorna timestamp formatado do momento atual.
+     * Utiliza o TimeProvider para permitir testes com tempo controlado.
      * 
      * @return String com timestamp atual
      */
     public static String getCurrentTimestamp() {
-        return LocalDateTime.now().format(FORMATTER);
+        return TimeProvider.getTimestamp();
     }
 }
