@@ -17,19 +17,6 @@ Este projeto demonstra a implementação de uma aplicação cliente-servidor com
 - Apache Maven 3.6.0 ou superior
 - Rede que suporte comunicação multicast (para funcionalidades de chat)
 
-## Arquitetura
-
-```
-src/main/java/local/redes/
-├── modelo/         # Classes de domínio
-│   └── Pessoa.java # Objeto serializável para troca de dados
-├── rede/           # Camada de comunicação
-│   ├── unicast/    # Comunicação ponto-a-ponto
-│   └── multicast/  # Comunicação em grupo
-├── ui/             # Interfaces com o usuário
-└── util/           # Classes utilitárias
-```
-
 ## Funcionalidades
 
 ### Sistema Cliente-Servidor (UDP Ponto-a-Ponto)
