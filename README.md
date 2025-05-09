@@ -86,7 +86,30 @@ Este projeto está sendo desenvolvido como ferramenta educacional para ilustrar 
 - A comunicação multicast pode não funcionar em algumas redes corporativas
 - Tamanho máximo de pacotes UDP (geralmente 65.507 bytes)
 
+## Executando os Testes
+
+O projeto conta com testes unitários e de integração abrangentes. Para executar os testes:
+
+```bash
+mvn test
+```
+
+### Tipos de Testes Implementados
+
+1. **Testes Unitários**
+   - `PessoaTest`: Testa a entidade Pessoa, serialização e métodos de objeto
+   - `ServidorTest`: Testa o processamento de mensagens pelo servidor
+   - `MulticastManagerTest`: Testa o gerenciador de comunicação multicast
+   - `ChatClientTest`: Testa a interface do cliente de chat
+
+2. **Testes de Integração**
+   - `IntegrationTest`: Simula comunicação entre cliente e servidor
+   - Testes de comunicação multicast entre instâncias
+
+3. **Utilitários para Testes**
+   - `NetworkTestUtils`: Fornece métodos auxiliares para testes de rede
+
 ## Próximos Passos
 
-- [ ] Implementação de testes unitários abrangentes
+- [x] Implementação de testes unitários abrangentes
 - [ ] Adição de criptografia para comunicações sensíveis
